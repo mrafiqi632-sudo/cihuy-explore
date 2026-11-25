@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="cBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c1d12"/>
+      <stop offset="100%" stop-color="#5a3b23"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cBg)"/>
+  <!-- Highland Foliage -->
+  <circle cx="140" cy="140" r="140" fill="#184737" opacity="0.5"/>
+  <circle cx="670" cy="390" r="170" fill="#184737" opacity="0.45"/>
+  <!-- Coffee Cup & Saucer -->
+  <ellipse cx="400" cy="355" rx="155" ry="30" fill="#e8e6de"/>
+  <path d="M295 225 H505 L485 335 C478 360 322 360 315 335 Z" fill="#f7f8f3"/>
+  <path d="M503 245 C548 245 548 308 494 308" fill="none" stroke="#f7f8f3" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="400" cy="225" rx="105" ry="22" fill="#3a2110"/>
+  <ellipse cx="400" cy="225" rx="88" ry="15" fill="#704221"/>
+  <!-- Steam -->
+  <path d="M365 185 Q350 150 370 115" fill="none" stroke="#f5e3ba" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M405 180 Q422 140 400 102" fill="none" stroke="#f5e3ba" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M442 185 Q428 152 446 118" fill="none" stroke="#f5e3ba" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  <!-- Coffee Cherries -->
+  <g fill="#b84237">
+    <circle cx="205" cy="340" r="16"/>
+    <circle cx="232" cy="360" r="15"/>
+    <circle cx="585" cy="180" r="15"/>
+  </g>
+</svg>

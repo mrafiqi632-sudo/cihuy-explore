@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="culSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#174437"/>
+      <stop offset="100%" stop-color="#d2b678"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#culSky)"/>
+  <!-- Traditional Rumoh Aceh Roof & Stilt House -->
+  <rect x="0" y="375" width="800" height="125" fill="#103128"/>
+  <g transform="translate(170,130)">
+    <polygon points="230,0 460,125 0,125" fill="#1a221f"/>
+    <polygon points="230,18 425,125 35,125" fill="#c4963b"/>
+    <rect x="45" y="125" width="370" height="90" fill="#4f3723"/>
+    <rect x="85" y="145" width="55" height="45" fill="#f2deb0"/>
+    <rect x="202" y="145" width="55" height="45" fill="#f2deb0"/>
+    <rect x="320" y="145" width="55" height="45" fill="#f2deb0"/>
+    <!-- Stilts -->
+    <rect x="65" y="215" width="16" height="55" fill="#2b1e13"/>
+    <rect x="165" y="215" width="16" height="55" fill="#2b1e13"/>
+    <rect x="275" y="215" width="16" height="55" fill="#2b1e13"/>
+    <rect x="375" y="215" width="16" height="55" fill="#2b1e13"/>
+  </g>
+  <!-- Pinto Aceh Geometric Motif Accent -->
+  <g stroke="#f6e6be" stroke-width="2.5" fill="none" opacity="0.5">
+    <polygon points="105,120 140,155 105,190 70,155"/>
+    <polygon points="695,120 730,155 695,190 660,155"/>
+  </g>
+</svg>

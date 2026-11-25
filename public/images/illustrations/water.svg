@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="wBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d4438"/>
+      <stop offset="100%" stop-color="#198c7f"/>
+    </linearGradient>
+    <linearGradient id="cascade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#effaf7"/>
+      <stop offset="100%" stop-color="#9fe0d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#wBg)"/>
+  <!-- Cliff Silhouettes -->
+  <path d="M0 0 L280 0 L240 360 L0 390 Z" fill="#092d25"/>
+  <path d="M520 0 L800 0 L800 390 L560 360 Z" fill="#092d25"/>
+  <!-- Waterfall Columns -->
+  <rect x="330" y="0" width="65" height="365" fill="url(#cascade)" opacity="0.9"/>
+  <rect x="415" y="0" width="42" height="365" fill="url(#cascade)" opacity="0.75"/>
+  <!-- Mist & Lagoon -->
+  <ellipse cx="400" cy="370" rx="220" ry="34" fill="#d9f5ef" opacity="0.65"/>
+  <path d="M0 375 Q400 350 800 375 L800 500 L0 500 Z" fill="#0f6457"/>
+  <ellipse cx="400" cy="425" rx="180" ry="18" fill="#ffffff" opacity="0.22"/>
+  <ellipse cx="400" cy="455" rx="110" ry="10" fill="#ffffff" opacity="0.16"/>
+</svg>

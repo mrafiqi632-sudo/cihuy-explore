@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="fBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b4236"/>
+      <stop offset="100%" stop-color="#0d2820"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#fBg)"/>
+  <!-- Serving Mat -->
+  <ellipse cx="400" cy="300" rx="235" ry="135" fill="#c4963b" opacity="0.22"/>
+  <circle cx="400" cy="275" r="155" fill="#f7f8f3"/>
+  <circle cx="400" cy="275" r="132" fill="#e5ebe7"/>
+  <!-- Spiced Aceh Noodle / Curry Bowl -->
+  <circle cx="400" cy="275" r="112" fill="#c95b2b"/>
+  <path d="M320 265 Q360 230 400 265 T480 265" fill="none" stroke="#eab956" stroke-width="11" stroke-linecap="round"/>
+  <path d="M330 295 Q375 260 415 295 T470 295" fill="none" stroke="#f0c869" stroke-width="10" stroke-linecap="round"/>
+  <!-- Garnishes -->
+  <circle cx="370" cy="240" r="14" fill="#2d7a47"/>
+  <circle cx="435" cy="252" r="12" fill="#8f291c"/>
+  <circle cx="405" cy="308" r="11" fill="#2d7a47"/>
+</svg>

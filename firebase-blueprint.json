@@ -1,0 +1,159 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Authenticated user account and assigned RBAC role.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "email": { "type": "string", "format": "email", "maxLength": 200 },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "role": { "type": "string", "enum": ["user", "operator", "admin"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "displayName", "role", "createdAt", "updatedAt"]
+    },
+    "Destination": {
+      "title": "Destination",
+      "description": "Curated Aceh destination entry.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]+$", "maxLength": 128 },
+        "nama": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "kategori": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "wilayah": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "deskripsi": { "type": "string", "minLength": 1, "maxLength": 1200 },
+        "imageUrl": { "type": "string", "maxLength": 500 },
+        "alamat": { "type": "string", "maxLength": 240 },
+        "mapsUrl": { "type": "string", "maxLength": 500 },
+        "estimasiBiaya": { "type": "number" },
+        "fasilitas": { "type": "array" },
+        "fasilitasIbadah": { "type": "array" },
+        "unggulan": { "type": "boolean" },
+        "verifikasiInfo": { "type": "string", "maxLength": 300 },
+        "status": { "type": "string", "enum": ["published", "draft"] },
+        "updatedBy": { "type": "string", "maxLength": 128 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "nama", "kategori", "wilayah", "deskripsi", "estimasiBiaya", "status", "updatedBy", "updatedAt"]
+    },
+    "FoodItem": {
+      "title": "FoodItem",
+      "description": "Aceh culinary and UMKM entry with halal verification metadata.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]+$", "maxLength": 128 },
+        "nama": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "kategori": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "wilayah": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "harga": { "type": "number" },
+        "imageUrl": { "type": "string", "maxLength": 500 },
+        "statusSertifikasiHalal": { "type": "string", "enum": ["terverifikasi", "belum_terverifikasi", "tidak_diketahui"] },
+        "sumberVerifikasi": { "type": "string", "maxLength": 300 },
+        "kontak": { "type": "string", "maxLength": 32 },
+        "status": { "type": "string", "enum": ["published", "draft"] },
+        "updatedBy": { "type": "string", "maxLength": 128 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "nama", "kategori", "wilayah", "harga", "statusSertifikasiHalal", "status", "updatedBy", "updatedAt"]
+    },
+    "StayItem": {
+      "title": "StayItem",
+      "description": "Muslim-friendly stay entry.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]+$", "maxLength": 128 },
+        "nama": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "wilayah": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "hargaPerMalam": { "type": "number" },
+        "fasilitas": { "type": "array" },
+        "fasilitasRamahMuslim": { "type": "array" },
+        "imageUrl": { "type": "string", "maxLength": 500 },
+        "kontak": { "type": "string", "maxLength": 32 },
+        "status": { "type": "string", "enum": ["published", "draft"] },
+        "updatedBy": { "type": "string", "maxLength": 128 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "nama", "wilayah", "hargaPerMalam", "status", "updatedBy", "updatedAt"]
+    },
+    "PackageItem": {
+      "title": "PackageItem",
+      "description": "Curated multi-day travel package template.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]+$", "maxLength": 128 },
+        "nama": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "durasi": { "type": "number" },
+        "daftarDestinasi": { "type": "array" },
+        "estimasiBiaya": { "type": "number" },
+        "deskripsi": { "type": "string", "minLength": 1, "maxLength": 1000 },
+        "minat": { "type": "array" },
+        "wilayah": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "status": { "type": "string", "enum": ["published", "draft"] },
+        "updatedBy": { "type": "string", "maxLength": 128 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "nama", "durasi", "estimasiBiaya", "deskripsi", "wilayah", "status", "updatedBy", "updatedAt"]
+    },
+    "UserFavorite": {
+      "title": "UserFavorite",
+      "description": "User-saved favorite item.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-]+$", "maxLength": 128 },
+        "uid": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "itemId": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "tipeItem": { "type": "string", "enum": ["destinasi", "kuliner", "penginapan"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "uid", "itemId", "tipeItem", "createdAt"]
+    },
+    "UserTrip": {
+      "title": "UserTrip",
+      "description": "User itinerary and budget plan.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "namaPerjalanan": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "tanggalMulai": { "type": "string", "maxLength": 20 },
+        "jumlahHari": { "type": "number" },
+        "jumlahWisatawan": { "type": "number" },
+        "daftarAktivitas": { "type": "array" },
+        "budget": { "type": "object" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "namaPerjalanan", "tanggalMulai", "jumlahHari", "jumlahWisatawan", "daftarAktivitas", "budget", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User profile documents and role assignments."
+    },
+    "/users/{userId}/favorites/{favId}": {
+      "schema": { "$ref": "#/entities/UserFavorite" },
+      "description": "Favorites saved by a specific user."
+    },
+    "/user_trips/{userId}": {
+      "schema": { "$ref": "#/entities/UserTrip" },
+      "description": "Saved itinerary and budget configuration owned by a specific user."
+    },
+    "/catalog_destinations/{destId}": {
+      "schema": { "$ref": "#/entities/Destination" },
+      "description": "Shared destination catalog managed by operators and admins."
+    },
+    "/catalog_foods/{foodId}": {
+      "schema": { "$ref": "#/entities/FoodItem" },
+      "description": "Shared culinary and UMKM catalog managed by operators and admins."
+    },
+    "/catalog_stays/{stayId}": {
+      "schema": { "$ref": "#/entities/StayItem" },
+      "description": "Shared Muslim-friendly stays catalog managed by operators and admins."
+    },
+    "/catalog_packages/{packageId}": {
+      "schema": { "$ref": "#/entities/PackageItem" },
+      "description": "Shared curated travel packages managed by admins."
+    }
+  }
+}

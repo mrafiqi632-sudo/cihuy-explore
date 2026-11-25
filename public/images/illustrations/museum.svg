@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="mSky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102722"/>
+      <stop offset="100%" stop-color="#2c594e"/>
+    </linearGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5ece8"/>
+      <stop offset="100%" stop-color="#b2c4bc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#mSky)"/>
+  <!-- Memorial Light Rays -->
+  <polygon points="400,20 260,340 540,340" fill="#dfbf7b" opacity="0.1"/>
+  <polygon points="400,20 335,340 465,340" fill="#dfbf7b" opacity="0.14"/>
+  <!-- Architectural Museum Wave Hull -->
+  <path d="M80 280 Q240 165 420 215 T740 190 L700 355 L115 355 Z" fill="url(#hull)"/>
+  <path d="M120 295 Q280 205 445 245 T725 225" fill="none" stroke="#0c3c30" stroke-width="5" opacity="0.45"/>
+  <path d="M135 320 Q300 245 460 275 T710 260" fill="none" stroke="#0c3c30" stroke-width="3" opacity="0.35"/>
+  <!-- Stilts / Columns -->
+  <g fill="#193b32">
+    <rect x="175" y="345" width="18" height="70"/>
+    <rect x="285" y="345" width="18" height="70"/>
+    <rect x="395" y="345" width="18" height="70"/>
+    <rect x="505" y="345" width="18" height="70"/>
+    <rect x="615" y="345" width="18" height="70"/>
+  </g>
+  <!-- Ground & Reflecting Strip -->
+  <rect x="0" y="405" width="800" height="95" fill="#091f1a"/>
+  <rect x="140" y="428" width="520" height="8" rx="4" fill="#2c6f60" opacity="0.55"/>
+</svg>

@@ -1,0 +1,51 @@
+:root {
+  /* 60% Neutral Canvas & Surfaces (<5% saturation) */
+  --bg-canvas: #f7f8f6;
+  --bg-surface: #ffffff;
+  --bg-subtle: #eff2ef;
+  --bg-tint: #e8f0ec;
+
+  /* Typography & Ink Hierarchy (WCAG AA+ >= 4.5:1) */
+  --ink-primary: #142822;
+  --ink-secondary: #41564f;
+  --ink-muted: #5e726b;
+
+  /* 10% Accent System: Deep Aceh Emerald & Antique Gold */
+  --brand-primary: #094c3b;
+  --brand-deep: #063529;
+  --brand-teal: #147a6c;
+  --brand-gold: #b88a32;
+  --brand-gold-soft: #e6c37a;
+
+  /* Semantic States (paired always with text labels) */
+  --state-ok-bg: #e7f3ec;
+  --state-ok-ink: #175934;
+  --state-warn-bg: #faf3e1;
+  --state-warn-ink: #6e5011;
+  --state-neutral-bg: #edf1ef;
+  --state-neutral-ink: #475852;
+  --state-danger: #b4343f;
+  --state-danger-bg: #fdf1f2;
+
+  /* Hairlines & Single-Level Elevation */
+  --border-hairline: #dce3df;
+  --border-strong: #c3d0c9;
+  --shadow-card: 0 1px 3px rgba(10, 36, 28, 0.05), 0 8px 24px rgba(10, 36, 28, 0.04);
+  --shadow-modal: 0 24px 60px rgba(6, 31, 24, 0.28);
+
+  /* Typography Families (2+1 Rule) */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Geometry & Radii */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --container-max: 1180px;
+  --header-height: 68px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 160ms;
+}

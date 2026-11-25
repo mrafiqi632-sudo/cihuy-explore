@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b3b2f"/>
+      <stop offset="55%" stop-color="#196653"/>
+      <stop offset="100%" stop-color="#dfbf7b"/>
+    </linearGradient>
+    <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#185949"/>
+      <stop offset="100%" stop-color="#082820"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="620" cy="115" r="46" fill="#f6dca0" opacity="0.85"/>
+  <path d="M0 330 Q200 315 400 330 T800 325 L800 370 L0 370 Z" fill="#0d4a3a"/>
+  <!-- Main Mosque Silhouette -->
+  <g fill="#f7f8f3">
+    <rect x="210" y="275" width="380" height="75" rx="3"/>
+    <!-- Central Dome -->
+    <path d="M335 245 C335 170 465 170 465 245 Z" fill="#182b26"/>
+    <rect x="330" y="245" width="140" height="30" fill="#eef2ee"/>
+    <rect x="398" y="150" width="4" height="24" fill="#dfbf7b"/>
+    <circle cx="400" cy="147" r="5" fill="#dfbf7b"/>
+    <!-- Side Domes -->
+    <path d="M235 255 C235 205 315 205 315 255 Z" fill="#182b26"/>
+    <path d="M485 255 C485 205 565 205 565 255 Z" fill="#182b26"/>
+    <rect x="273" y="196" width="4" height="14" fill="#dfbf7b"/>
+    <rect x="523" y="196" width="4" height="14" fill="#dfbf7b"/>
+    <!-- Minarets -->
+    <rect x="165" y="175" width="22" height="175" fill="#eef2ee"/>
+    <path d="M161 175 C161 150 191 150 191 175 Z" fill="#182b26"/>
+    <rect x="613" y="175" width="22" height="175" fill="#eef2ee"/>
+    <path d="M609 175 C609 150 639 150 639 175 Z" fill="#182b26"/>
+  </g>
+  <!-- Arches -->
+  <g fill="#0c3c30">
+    <path d="M372 350 V302 C372 286 428 286 428 302 V350 Z"/>
+    <path d="M312 350 V310 C312 298 346 298 346 310 V350 Z"/>
+    <path d="M454 350 V310 C454 298 488 298 488 310 V350 Z"/>
+    <path d="M244 350 V310 C244 298 278 298 278 310 V350 Z"/>
+    <path d="M522 350 V310 C522 298 556 298 556 310 V350 Z"/>
+  </g>
+  <!-- Reflecting Pool -->
+  <rect x="0" y="350" width="800" height="150" fill="url(#pool)"/>
+  <g opacity="0.22" fill="#f6dca0">
+    <rect x="260" y="372" width="280" height="5" rx="2"/>
+    <rect x="300" y="392" width="200" height="4" rx="2"/>
+    <rect x="335" y="414" width="130" height="3" rx="2"/>
+    <rect x="360" y="438" width="80" height="3" rx="2"/>
+  </g>
+  <!-- Umbrellas -->
+  <g fill="#f7f8f3" opacity="0.9">
+    <path d="M90 315 L125 300 L160 315 Z"/><rect x="123" y="315" width="4" height="35"/>
+    <path d="M640 315 L675 300 L710 315 Z"/><rect x="673" y="315" width="4" height="35"/>
+  </g>
+</svg>

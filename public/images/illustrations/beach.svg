@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8eee9"/>
+      <stop offset="100%" stop-color="#f7f4e8"/>
+    </linearGradient>
+    <linearGradient id="bSea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#199688"/>
+      <stop offset="100%" stop-color="#0b554c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bSky)"/>
+  <circle cx="630" cy="110" r="42" fill="#e8c373" opacity="0.9"/>
+  <!-- Distant Island Headland -->
+  <path d="M0 245 Q130 185 270 230 T510 245 L510 265 L0 265 Z" fill="#3b7665" opacity="0.6"/>
+  <path d="M460 250 Q620 190 800 235 L800 265 L460 265 Z" fill="#275e4e"/>
+  <!-- Sea -->
+  <rect x="0" y="255" width="800" height="125" fill="url(#bSea)"/>
+  <!-- Foam & Sand -->
+  <path d="M0 365 Q210 340 430 370 T800 355 L800 500 L0 500 Z" fill="#efe2c3"/>
+  <path d="M0 360 Q210 335 430 365 T800 350" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.8"/>
+  <!-- Traditional Boat -->
+  <g transform="translate(260,300)">
+    <path d="M0 20 Q55 38 115 16 L98 4 L12 8 Z" fill="#0d3d32"/>
+    <rect x="52" y="-36" width="3" height="44" fill="#0d3d32"/>
+    <polygon points="55,-34 95,4 55,4" fill="#f7f8f3"/>
+  </g>
+  <!-- Palm Fronds -->
+  <g fill="#0b3b2f">
+    <path d="M55 500 Q70 350 95 210 L108 214 Q86 350 74 500 Z"/>
+    <path d="M100 212 Q45 190 10 225 Q55 215 100 218 Z"/>
+    <path d="M100 212 Q70 155 35 160 Q75 182 100 212 Z"/>
+    <path d="M100 212 Q145 165 185 195 Q140 195 100 215 Z"/>
+    <path d="M100 212 Q160 205 195 245 Q145 225 100 218 Z"/>
+  </g>
+</svg>

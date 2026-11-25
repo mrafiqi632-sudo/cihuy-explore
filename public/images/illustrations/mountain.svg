@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="mtSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#173830"/>
+      <stop offset="60%" stop-color="#3c6e5f"/>
+      <stop offset="100%" stop-color="#ecd29a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#mtSky)"/>
+  <circle cx="400" cy="185" r="52" fill="#f7dfa5" opacity="0.85"/>
+  <!-- Distant Ridge -->
+  <path d="M0 310 L140 215 L290 275 L460 155 L635 255 L800 190 L800 500 L0 500 Z" fill="#1b4d3f"/>
+  <!-- Mist Band -->
+  <rect x="0" y="295" width="800" height="45" fill="#eaf2ee" opacity="0.22"/>
+  <!-- Foreground Highland -->
+  <path d="M0 365 Q180 285 385 350 T800 320 L800 500 L0 500 Z" fill="#0b3027"/>
+  <!-- Pine Trees -->
+  <g fill="#06211b">
+    <polygon points="110,335 132,395 88,395"/>
+    <polygon points="145,350 165,405 125,405"/>
+    <polygon points="650,315 676,385 624,385"/>
+    <polygon points="695,330 718,395 672,395"/>
+  </g>
+</svg>

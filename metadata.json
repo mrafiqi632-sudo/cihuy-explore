@@ -1,0 +1,6 @@
+{
+  "name": "cihuy explore",
+  "description": "Jelajahi Aceh — curated travel guide, local culinary & UMKM directory, Muslim-friendly stays, interactive trip planner, and budget calculator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
